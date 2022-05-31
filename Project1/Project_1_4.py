@@ -1,3 +1,5 @@
+# Project 1 extension: Allow the opponent (computer)
+# to choose a stat that they would like to compare
 import random
 import requests
 
@@ -20,6 +22,7 @@ def get_stats():
     return stats
 
 
+# randomly choosing a stat by generating a random number from their indices
 def random_choice():
     stat_keys = ['id', 'height', 'weight']
     random_number = random.randint(0, len(stat_keys)-1)

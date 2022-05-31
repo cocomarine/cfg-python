@@ -1,3 +1,4 @@
+# Project 1 extension: Record high scores for players and store them in a file
 import random
 import requests
 import csv
@@ -32,6 +33,7 @@ def run():
     print("Your Pokemon stats: {}".format(player[stat_choice]))
     print("Opponent's Pokemon stats: {}".format(opponent[stat_choice]))
 
+    # for each run, winner and winning score stored in data dictionary
     who = ""
     score = 0
     if player[stat_choice] > opponent[stat_choice]:
@@ -58,11 +60,13 @@ def write_file():
 
     field_names = ['who', 'chosen_stat', 'winning_score']
 
+    # results to be recorded in a csv file
     with open('poke_high_scores.csv', 'w+') as csv_file:
         spreadsheet = csv.DictWriter(csv_file, fieldnames=field_names)
 
         spreadsheet.writeheader()
 
+        # returned data dictionary after each round is written as row in the file
         for i in range(rounds):
             print("Round {}\n".format(i + 1))
             data = run()
