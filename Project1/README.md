@@ -1,4 +1,8 @@
 ### Project Brief: Top Trumps
+This was the final group project we chose, but I ended up doing it as a solo project as the other members weren't able to join. 
+I worked on the required tasks first and then modified it to incorporate extensions and variations. 
+
+### Instruction 
 In this project you'll create a small game where players compare stats, similar to the Top Trumps
 card game. The basic flow of the games is:
 1. You are given a random card with different stats
