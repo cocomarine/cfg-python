@@ -3,8 +3,8 @@
 import requests
 
 def recipe_search(ingredient):
-    app_id = '0d951222'
-    app_key = '14d6cfc30995f17bde17b1441195a139'
+    app_id = 'XXXX'
+    app_key = 'XXXX'
 
     # edamam api address of an ingredient
     url = 'https://api.edamam.com/search?q={}&app_id={}&app_key={}'.format(ingredient, app_id, app_key)
